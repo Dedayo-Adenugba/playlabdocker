@@ -7,3 +7,4 @@ docker run learn_docker echo "Hello from Alpine Linux!"
 docker history learn_docker
 WORKDIR /downloads/markdown
 RUN curl -LO https://raw.githubusercontent.com/cloudacademy/python_postgres_web_app/main/readme.md
+docker run learn_docker ls -lash /downloads
