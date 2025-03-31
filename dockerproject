@@ -1,5 +1,5 @@
 https://005584975620.signin.aws.amazon.com/console?region=us-west-2
-GMIkZwc_v8Ps9O
+MSW_z90t2Zm_i2
 http://54.212.244.62
 docker build . -t learn_docker
 docker run learn_docker echo "Hello from Alpine Linux!"
