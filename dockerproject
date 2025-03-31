@@ -6,12 +6,14 @@ docker run learn_docker echo "Hello from Alpine Linux!"
 docker history learn_docker
 WORKDIR /downloads/markdown
 RUN curl -LO https://raw.githubusercontent.com/cloudacademy/python_postgres_web_app/main/readme.md
-docker run learn_docker ls -lash /downloads
 # syntax=docker/dockerfile:1
-FROM  mcr.microsoft.com/powershell
-# Currently using the Linux default: /bin/sh
-RUN mkdir -p /demo
-RUN "Hello, World!" | Out-File -Path /demo/message.txt
+FROM alpine
+ENV FLASK_APP=app.py
+ENV FLASK_DEBUG=true
+ENV FLASK_RUN_PORT=9000
+ENV FLASK_RUN_HOST=0.0.0.0
+ENV ABC=123 DEF=456 ANIMAL=cat
+
 
 
 WORKDIR /downloads/markdown
