@@ -19,3 +19,4 @@ EXPOSE 9000
 CMD gunicorn --workers=2 app:app -b "$FLASK_RUN_HOST:$FLASK_RUN_PORT" --log-level="$GUNICORN_LOG_LEVEL"
 ----------------------
 
+docker run --name postgres -d --net=web_to_db --mount=type=volume,src=overshare-data,dst=/var/lib/postgresql/data -e POSTGRES_USER=webuser -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=web_app postgres:15-alpine 
