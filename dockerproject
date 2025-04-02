@@ -1,3 +1,21 @@
 https://585878525967.signin.aws.amazon.com/console?region=us-west-2
 rv9CfT_kUuAfJX
 http://35.92.164.248
+# Set the working directory until it's changed
+WORKDIR /code
+COPY . .
+RUN --mount=type=cache,target=/root/.cache/ python3 -m pip install -r requirements.txt --cache-dir=/root/.cache/ 
+
+------------------------
+ARG ENABLE_FLASK_DEBUG true
+ENV FLASK_APP app.py
+ENV FLASK_DEBUG $ENABLE_FLASK_DEBUG
+ENV FLASK_RUN_PORT 9000
+ENV FLASK_RUN_HOST 0.0.0.0
+ENV GUNICORN_LOG_LEVEL debug
+
+EXPOSE 9000
+
+CMD gunicorn --workers=2 app:app -b "$FLASK_RUN_HOST:$FLASK_RUN_PORT" --log-level="$GUNICORN_LOG_LEVEL"
+----------------------
+
