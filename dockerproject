@@ -24,3 +24,7 @@
         name: "{{ item }}"
         state: started
       with_items: "{{ services }}"
+- name: EnableApache2 modssl
+      shell: a2enmod ssl
+- name: EnableApache2 DefaultHTTPS site
+      shell: a2ensite default-ssl
