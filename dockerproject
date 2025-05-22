@@ -28,3 +28,7 @@
       shell: a2enmod ssl
 - name: EnableApache2 DefaultHTTPS site
       shell: a2ensite default-ssl
+- name: Restart Apache 
+      service:
+        name: apache2
+        state: restarted
