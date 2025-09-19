@@ -1,2 +1,15 @@
 iM76N0H_m83UO6
 https://251723549964.signin.aws.amazon.com/console?region=us-west-2
+--------------------------------
+git clone https://github.com/cloudacademy/devops-jenkins-docker-splunk.git
+cd ./devops-jenkins-docker-splunk
+-------------------------
+cd ~/devops-jenkins-docker-splunk/
+ls -l 
+----------------------------------
+docker pull jenkins/jenkins:lts
+docker-compose up -d && docker-compose logs -f
+-----------------------------------
+docker ps -a --format "table {{.Names}}\t{{.Status}}"
+--------------------------
+docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
