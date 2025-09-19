@@ -12,3 +12,5 @@ docker-compose up -d && docker-compose logs -f
 docker ps -a --format "table {{.Names}}\t{{.Status}}"
 --------------------------
 docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+------------------------
+http://34.220.18.182:8000
