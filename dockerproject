@@ -2,3 +2,4 @@ https://708048379844.signin.aws.amazon.com/console?region=us-west-2
 osFO_nYL2ZinKQ
 https://github.com/cloudacademy/devops-jenkins-docker-splunk
 docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+password = 37351cecab0f48b88ffc81b1f664636e
