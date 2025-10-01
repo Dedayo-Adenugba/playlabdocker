@@ -3,3 +3,4 @@ osFO_nYL2ZinKQ
 https://github.com/cloudacademy/devops-jenkins-docker-splunk
 docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 password = 37351cecab0f48b88ffc81b1f664636e
+http://35.92.96.61:8000
