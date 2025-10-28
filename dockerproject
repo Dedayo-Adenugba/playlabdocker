@@ -1,3 +1,24 @@
+
+
+
+:x: Submission Failed - 1 attempt(s) remaining
+Score: -2.8000000000000003/10
+Validation Errors:
+:x: [blue] Connection error: HTTPConnectionPool(host='20.162.199.201', port=8081): Max retries exceeded with url: /version (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x76221ca988c0>, 'Connection to 20.162.199.201 timed out. (connect timeout=10)'))
+:x: [green] Connection error: HTTPConnectionPool(host='20.162.199.201', port=8082): Max retries exceeded with url: /version (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x76221c517200>, 'Connection to 20.162.199.201 timed out. (connect timeout=10)'))
+:x: [nginx] server response json error - request 1
+:x: [nginx] Release ID does not match Blue - request 1
+:x: [nginx] server response json error - request 2
+:x: [nginx] Release ID does not match Blue - request 2
+:x: [nginx] server response json error - request 3
+:x: [nginx] Release ID does not match Blue - request 3
+:x: [nginx] server response json error - request 4
+:x: [nginx] Release ID does not match Blue - request 4
+:x: [nginx] server response json error - request 5
+:x: [nginx] Release ID does not match Blue - request 5
+:x: [blue] Failed to trigger chaos mode: HTTPConnectionPool(host='20.162.199.201', port=8081): Max retries exceeded with url: /chaos/start?mode=timeout (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x76221c516990>, 'Connection to 20.162.199.201 timed out. (connect timeout=10)'))
+
+-----------------------------------------
 https://docs.google.com/document/d/15U9JMdqdSJbda_Ser5lacfM-0R9SP27Y1Gq6TEKNsio/edit?usp=sharing
 
 
